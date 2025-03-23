@@ -106,7 +106,7 @@ def agregar_libro():
     autor = simpledialog.askstring("Agregar Libro", "Ingrese el autor:")
     isbn = simpledialog.askstring("Agregar Libro", "Ingrese el ISBN:")
     disponible = messagebox.askyesno("Agregar Libro", "¿Disponible?")
-    if titulo, autor, isbn:
+    if titulo and autor and isbn:
         Libro.agregar(titulo, autor, isbn, disponible)
 
 def prestar_libro():
